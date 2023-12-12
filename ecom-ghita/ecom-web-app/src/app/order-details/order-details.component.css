@@ -1,0 +1,63 @@
+/* Add this CSS to your component's style file or in your global styles */
+
+.container {
+  margin-top: 2rem;
+}
+
+.card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.5rem;
+}
+
+.card-header {
+  background-color: #343a40;
+  color: #fff;
+  border-radius: 10px 10px 0 0;
+}
+
+.card-body {
+  padding: 1.25rem;
+}
+
+.list-group-item {
+  border: none;
+  border-radius: 0;
+}
+
+.table {
+  width: 100%;
+}
+
+.table thead th {
+  background-color: #343a40;
+  color: #fff;
+}
+
+.table tbody tr:hover {
+  background-color: #f8f9fa;
+}
+
+.bg-dark {
+  background-color: #343a40;
+  color: #fff;
+}
+
+.text-end {
+  text-align: end;
+}
+
+.text-sm-start {
+  text-align: start;
+}
+
+/* Add a subtle animation to highlight rows on hover */
+.table tbody tr:hover {
+  transition: background-color 0.3s;
+}
+
+/* Add a slight shadow to the total row */
+.bg-dark.text-white {
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}

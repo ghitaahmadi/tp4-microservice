@@ -1,0 +1,59 @@
+/* Add this CSS to your component's style file or in your global styles */
+body {
+  background-color: #f0f0f0; /* Set a light background color for the body */
+}
+.container {
+  margin: 20px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-family: 'Arial', sans-serif;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f8f8f8;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+  transition: background-color 0.3s;
+}
+
+/* Add a bit of flair to the table cells */
+td {
+  position: relative;
+}
+
+td:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(45deg, #4CAF50, #2196F3);
+  z-index: -1;
+  transform: scaleX(0);
+  transform-origin: 100% 50%;
+  transition: transform 0.5s ease-out;
+}
+
+td:hover:before {
+  transform: scaleX(1);
+  transform-origin: 0 50%;
+}
